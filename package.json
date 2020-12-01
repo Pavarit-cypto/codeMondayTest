@@ -1,0 +1,31 @@
+{
+  "name": "codeMondayTest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pavarit-cypto/codeMondayTest.git"
+  },
+  "keywords": [],
+  "author": " <Pavarit> (example.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pavarit-cypto/codeMondayTest/issues"
+  },
+  "homepage": "https://github.com/Pavarit-cypto/codeMondayTest#readme",
+  "devDependencies": {
+    "@prisma/cli": "^2.12.1",
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.10",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^2.12.1",
+    "express": "^4.17.1"
+  }
+}
