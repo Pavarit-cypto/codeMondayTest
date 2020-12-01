@@ -11,13 +11,13 @@ app.use(express.json());
  * Get All Data in Table
  */
 app.get("/allteacher", async (req, res) => {
-  const users = await prisma.teacher.findMany();
-  res.json(users);
+  const teacher = await prisma.teacher.findMany();
+  res.json(teacher);
 });
 
 app.get("/allcourse", async (req, res) => {
-  const posts = await prisma.course.findMany();
-  res.json(posts);
+  const course = await prisma.course.findMany();
+  res.json(course);
 });
 
 /**
@@ -112,18 +112,6 @@ app.put("/course/update/:id", async (req, res) => {
   });
   res.json(result);
 });
-
-/**
- * Search Course Name
- */
-
-app.get("/search/:input", async (req, res) => {
-  const { input } = req.params;
-  const result = await prisma.course.findOne({
-    where: { id: Number(input) },
-  })
-  res.json(result)
-})
 
 app.listen(3000, () =>
   console.log("REST API server ready at: http://localhost:3000")
